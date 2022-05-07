@@ -3,7 +3,7 @@ from pygame import *
 class GameSprite(sprite.Sprite):
     def __init__(self, player_image, player_x, player_y, speed, width, height):
         super().__init__()
-        self.image = transofrm.scale(image.load(player_image))
+        self.image = transform.scale(image.load(player_image))
         self.speed = player_speed
         self.rect = self.image.get_rect()
         self.rect.x = player_x
